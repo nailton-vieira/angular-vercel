@@ -1,0 +1,69 @@
+/* --- Variáveis de Cor para fácil manutenção --- */
+$primary-color: #000080;      // Azul marinho
+$secondary-color: #f0f0f0;    // Cinza claro
+$text-light: #ffffff;         // Texto branco
+$text-blue: #0000ff;          // Texto azul
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+/* --- Estilo Principal do Componente --- */
+.header-container {
+  width: 100%;
+  box-shadow: 0 2px 4px $shadow-color;
+
+  /* Barra Superior (Azul Marinho) */
+  .top-bar {
+    background-color: $primary-color;
+    color: $text-light;
+    padding: 8px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .contact-info {
+      display: flex;
+      gap: 20px;
+      font-size: 0.9rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+
+  /* Barra de Navegação Principal (Cinza Claro) */
+  .main-nav {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 30px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $text-blue;
+          font-weight: bold;
+          font-size: 1.1rem;
+          padding: 10px 15px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease, color 0.3s ease;
+
+          // Efeito hover aninhado
+          &:hover {
+            background-color: $primary-color;
+            color: $text-light;
+          }
+        }
+      }
+    }
+  }
+}
