@@ -31,6 +31,16 @@ $shadow-color: rgba(0, 0, 0, 0.1);
       }
     }
   }
+   .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
 
   /* Barra de Navegação Principal (Cinza Claro) */
   .main-nav {
@@ -67,3 +77,7 @@ $shadow-color: rgba(0, 0, 0, 0.1);
     }
   }
 }
+.user-action {
+            display: flex;
+            align-items: center;
+        }
