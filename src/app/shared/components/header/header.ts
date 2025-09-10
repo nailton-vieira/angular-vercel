@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { LoginForm } from '../login-form/login-form';
+
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [LoginForm],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
